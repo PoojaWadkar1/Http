@@ -1,0 +1,27 @@
+<div class="container">
+    <button type="button" class="btn btn-primary m-2" routerLink="/products/create-product">Create Product</button>
+<table class="table table-bordered text-center">
+    <thead>
+      <tr>
+        <th>Action</th>
+        <th>Product Name</th>
+        <th>Stock</th>
+        <th>Price</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of (productlistAsync | async);let i=index">
+        <td>
+            <i class="bi bi-pencil-square" [routerLink]="['/products/editproduct',item.id]"></i>
+            <i class="bi bi-trash ms-2" (click)="deleteProduct(i,item)"></i>
+        </td>
+        <td>{{item.productname}}</td>
+        <td>{{item.stock}}</td>
+        <td>{{item.price}}</td>
+        <td>{{item.category}}</td>
+      </tr>
+      
+    </tbody>
+  </table>
+</div>

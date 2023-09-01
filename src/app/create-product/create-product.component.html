@@ -1,0 +1,16 @@
+
+<div class="container w-50 mt-5 p-5 border shadow">
+    <h3>Create Product</h3>
+    <form [formGroup]="productForm" (ngSubmit)="save()">
+        <label for="id1">Product Name</label>
+        <input type="text" id="id1" formControlName="productname"><br><br>
+        <label for="id1">Stock</label>
+        <input type="mob" id="id2" formControlName="stock"><br><br>
+        <label for="id3">Price</label>
+        <input type="text" id="id3" formControlName="price"><br><br>
+        <label for="id4">Category</label>
+        <input type="text" id="id4" formControlName="category"> <br>
+    </form>
+</div>
+<button  class="btn btn-success m-2"(click)="save()">Save</button>
+<button  class="btn btn-danger m-2" routerLink="/products/productlist">Back</button>

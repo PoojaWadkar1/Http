@@ -1,0 +1,22 @@
+<div class="container w-50 m-5 border shadow p-8">
+    <h3 >Login</h3>
+    <div class="alert alert-danger" role="alert" *ngIf="isnewUser">
+      Please register first!
+      </div>
+      <!-- <div class="alert alert-success" role="alert" *ngIf="!isnewUser">
+       Login Successfully!
+        </div> -->
+    <form [formGroup]="loginform" (ngSubmit)="onlogin()">
+        <div class="mb-3">
+            <label for="id1">Email</label>
+            <input type="text" name="email" id="id1" formControlName="email">
+        </div>
+        <div class="mb-3">
+
+            <label for="id2"> Password</label>
+            <input type="text" name="email" id="id2" formControlName="password">
+        </div>
+    </form>
+</div>
+<button type="button" class="btn btn-secondary m-4" routerLink="/signup">SignUp</button>
+<button  class="btn btn-success m-4" (click)="onlogin()">Login</button>

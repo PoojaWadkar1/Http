@@ -1,0 +1,12 @@
+<p>demo works!</p>
+<div class="">
+    <form [formGroup]="demoForm" (ngSubmit)="save()">
+<label for="id1">Name</label>
+<input type="text" value="" placeholder="" id="id1" formControlName="name">
+<label for="id2">Mobile</label>
+<input type="text" value="" placeholder="" id="id2" formControlName="mobile">
+ </form>
+
+</div>
+
+<button class="btn-secondary" (click)="save()"> submit</button>

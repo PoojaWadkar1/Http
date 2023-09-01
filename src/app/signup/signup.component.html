@@ -1,0 +1,15 @@
+<div class="container w-50 mt-5 p-5 border shadow">
+    <h3>SignUp</h3>
+    <form [formGroup]="signupForm" (ngSubmit)="signup()">
+        <label for="id1">Name</label>
+        <input type="text" id="id1" formControlName="name"><br><br>
+        <label for="id1">MobileNo</label>
+        <input type="mob" id="id2" formControlName="mobile"><br><br>
+        <label for="id3">Email</label>
+        <input type="email" id="id3" formControlName="email"><br><br>
+        <label for="id4">Password</label>
+        <input type="password" id="id4" formControlName="password"> <br>
+    </form>
+</div>
+<button type="button"  class="btn btn-secondary m-4" routerLink="/login">Login</button>
+<button  class=" btn-secondary m-4" (click)="signup()">SignUp</button>
