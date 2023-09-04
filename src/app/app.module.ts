@@ -14,6 +14,7 @@ import { ProductlistComponent } from './productlist/productlist.component';
 import { ProductsComponent } from './products/products.component';
 import { CreateProductComponent } from './create-product/create-product.component';
 import { AppInterceptorInterceptor } from './interceptor/app-interceptor.interceptor';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { AppInterceptorInterceptor } from './interceptor/app-interceptor.interce
     ProductlistComponent,
     ProductsComponent,
     CreateProductComponent
+
   ],
   imports: [
     BrowserModule,
