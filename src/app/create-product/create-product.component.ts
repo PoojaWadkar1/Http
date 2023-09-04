@@ -37,6 +37,7 @@ export class CreateProductComponent implements Ideactivate {
   }
 
   ngOnInit() {
+    console.log("ngOnInit")
     this.product();
     if(this.isEdit){
       this.getProductDetailsbyId();
