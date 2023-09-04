@@ -15,7 +15,9 @@ constructor(private fb:FormBuilder,private loginsvc:LoginserviceService,private 
   
 }
 ngOnInit(){
+  
   this.login();
+  console.log('ngOnInit')
 }
 login(){
   this.loginform=this.fb.group({
